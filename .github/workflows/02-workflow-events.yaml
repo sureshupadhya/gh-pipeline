@@ -10,5 +10,5 @@ jobs:
   echo:
     runs-on: ubuntu-latest
     steps:
-      - name: WorkFlow Events
+      - name: Workflow Events
         run: echo "i have been trigged by ${{github.event_name}} event"
