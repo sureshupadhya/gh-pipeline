@@ -9,10 +9,10 @@ jobs:
   echo-Failed-job:
     runs-on: ubuntu-latest
     steps:
-      - name: I will fail
+      - name: I will pass
         run: |
-          echo " Failed Job"
-          exit 1
+          echo " Succed Job"
+          exit 0
       - name: Goodbye-job
         run: |
           echo "goodbye!"
