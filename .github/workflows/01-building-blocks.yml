@@ -1,0 +1,10 @@
+name: 01- BUilding BLocks
+
+on: push
+
+jobs:
+  echo-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say echo-hello
+        run: echo "Hello, World"
