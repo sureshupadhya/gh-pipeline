@@ -1,9 +1,11 @@
 name: 02 Workflow Events
 on: 
   push:
+    branches:
+      - mainbranch
   pull_request:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: '*/5 * * * *'
   workflow_dispatch:
     
 jobs:
