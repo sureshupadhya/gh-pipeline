@@ -1,21 +1,18 @@
-name: 01- BUilding BLocks
-
+name: 01-Building BLocks
 on: push
-
 jobs:
   echo-hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Say echo-hello
-        run: echo "Hello, World"
-  echo-goodbye:
+      - name: Echo-hello
+        run: echo "Hello-World"
+  echo-Failed-job:
     runs-on: ubuntu-latest
     steps:
-      - name: I will be Successful
+      - name: I will fail
         run: |
-          echo "I am Successful"
-          exit 0
-      - name: Say echo-goodbye
-        run: echo "Goodbye!"
-
-        
+          echo " Failed Job"
+          exit 1
+      - name: Goodbye-job
+        run: |
+          echo "goodbye!"
