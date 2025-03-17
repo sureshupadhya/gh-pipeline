@@ -1,5 +1,5 @@
 name: 03 WorkFlow Runners
-on: push
+on: workflow_dispatch
 jobs:
   Echo_Runners:
     runs-on: ubuntu-latest
